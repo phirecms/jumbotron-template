@@ -44,6 +44,10 @@ h1 {
     overflow: hidden;
 }
 
+ul.nav {
+    position: relative;
+}
+
 .jumbotron {
     color: #fff;
     background-image: url(../img/night-sky1-1600x500.jpg);
@@ -105,4 +109,54 @@ h1 {
 .footer > div {
     font-size: 0.9em;
     padding: 20px 10px 10px 10px;
+}
+
+@media (min-width: 769px) {
+    ul.nav > li > ul {
+        position: absolute;
+        padding: 0;
+        display: none;
+    }
+
+    ul.nav > li:hover > ul {
+        display: block;
+    }
+
+    ul.nav > li > ul > li {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    ul.nav > li > ul > li > a {
+        margin: 0;
+        padding: 7px;
+        display: block;
+        width: 160px;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+    }
+}
+
+@media (max-width: 768px) {
+    ul.nav > li > ul {
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul.nav > li > ul > li {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    ul.nav > li > ul > li > a {
+        margin: 0;
+        padding: 7px 7px 7px 25px;
+        display: block;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #fff;
+    }
 }
