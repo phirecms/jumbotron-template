@@ -111,6 +111,10 @@ ul.nav {
     padding: 20px 10px 10px 10px;
 }
 
+.error {
+    color: #f00;
+}
+
 @media (min-width: 769px) {
     ul.nav > li > ul {
         position: absolute;
