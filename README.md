@@ -10,7 +10,7 @@ OVERVIEW
 
 A template or template sets are meant to be used with the phire-templates
 module. They allow for a reusable set of string templates to be stored and
-managed in the database via the system. Those templates ca be applied to
+managed in the database via the system. Those templates can be applied to
 content for layout purposes.
 
 INSTALLATION & USE
